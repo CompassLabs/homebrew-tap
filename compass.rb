@@ -5,20 +5,20 @@
 class Compass < Formula
   desc "Compass API: Compass Labs DeFi API"
   homepage "https://github.com/CompassLabs/cli"
-  version "0.1.62"
+  version "0.1.63"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/CompassLabs/cli/releases/download/v0.1.62/compass_Darwin_x86_64.tar.gz"
-      sha256 "6a05595780e375dc257afa277197f5f530721d1211918aecdb54ce89a97e5891"
+      url "https://github.com/CompassLabs/cli/releases/download/v0.1.63/compass_Darwin_x86_64.tar.gz"
+      sha256 "3743603765bd52c7308d4cdeb74ef00c2c8334946253a9980db09500b587bfc9"
 
       define_method(:install) do
         bin.install "compass"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/CompassLabs/cli/releases/download/v0.1.62/compass_Darwin_arm64.tar.gz"
-      sha256 "c47a7b7e20cdd85b6cdb6fc81b5fa316a504bcf3a96b30a225d403e87b2bc146"
+      url "https://github.com/CompassLabs/cli/releases/download/v0.1.63/compass_Darwin_arm64.tar.gz"
+      sha256 "7602015c661ba66695382a5c4ee37a49c8e5b7f3bbb3a1693472981f127cb961"
 
       define_method(:install) do
         bin.install "compass"
@@ -28,15 +28,15 @@ class Compass < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/CompassLabs/cli/releases/download/v0.1.62/compass_Linux_x86_64.tar.gz"
-      sha256 "86711ea869d8a21d66324dfce3ed3f91550afa99d71d43adb99af460d3a44748"
+      url "https://github.com/CompassLabs/cli/releases/download/v0.1.63/compass_Linux_x86_64.tar.gz"
+      sha256 "ff9c9c5b660808098767364a48655affff6ce860a7a401661ad400028249c567"
       define_method(:install) do
         bin.install "compass"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/CompassLabs/cli/releases/download/v0.1.62/compass_Linux_arm64.tar.gz"
-      sha256 "ed02d0a08f30d0f399c374e7a2564d494ae2fdbc2ffd7cc02efbc9df020c4024"
+      url "https://github.com/CompassLabs/cli/releases/download/v0.1.63/compass_Linux_arm64.tar.gz"
+      sha256 "54aa5cad4ca5d258eac49a3d90c325a55ad952b8b896372d3e1e29eb716cd149"
       define_method(:install) do
         bin.install "compass"
       end
